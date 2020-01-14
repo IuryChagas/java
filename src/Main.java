@@ -16,7 +16,6 @@ public class Main {
 
 	public static void main(String[] args) {
 	
-		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
 		double largura = input.nextDouble();
@@ -34,6 +33,8 @@ public class Main {
 		System.out.printf("Valor por metro: %.2f%n%n", valorMetroQuadrado);
 		System.out.printf("AREA: %.2fm%n", area);
 		System.out.printf("PREÇO: R$ %.2f", valorTotal);
+
+		input.close();
 	}
 
 }
