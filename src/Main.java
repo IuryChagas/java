@@ -40,6 +40,9 @@ public class Main {
 		
 		System.out.println("Valor absoluto de "+ y +" = "+ a);
 		System.out.println("Valor absoluto de "+ z +" = "+ b);
+		
+		//  Para mais informações sobre funções matematicas em Java: java.lang.math
+		//  link: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
 	}
 
 }
