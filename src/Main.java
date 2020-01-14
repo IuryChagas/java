@@ -15,7 +15,8 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-	
+		
+		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
 		
 		double largura = input.nextDouble();
@@ -25,7 +26,6 @@ public class Main {
 		double area = comprimento * largura;
 		double valorTotal = area * valorMetroQuadrado;
 		
-		Locale.setDefault(Locale.US);
 		System.out.println("\n");
 		
 		System.out.printf("Largura: %.1f%n", largura);
