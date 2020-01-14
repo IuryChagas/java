@@ -1,25 +1,24 @@
 
-import java.util.Locale;
+
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);;
+
 		Scanner input = new Scanner(System.in);
 		
-		String valueS;
-		int valueInt;
-		double  valueDoub;
+		String s1, s2, s3;
 		
-		valueS = input.next();
-		valueInt = input.nextInt();
-		valueDoub = input.nextDouble();
-		System.out.println("\nDados digitador:  \n");
-		System.out.println("Palavra: "+ valueS);
-		System.out.println("N° inteiro: "+ valueInt);
-		System.out.println("N° Double: "+ valueDoub);
+		s1 = input.nextLine();
+		s2 = input.nextLine();
+		s3 = input.nextLine();
 		
+		System.out.println("DADOS DIGITADOS: \n");
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+
 		input.close();
 	}
 
