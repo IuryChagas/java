@@ -1,47 +1,45 @@
-
-
-import java.util.Scanner;
+import com.sun.tools.sjavac.server.SysInfo;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Scanner input = new Scanner(System.in);
+		double x = 3.0;
+		double y = 4.0;
+		double z = -5.0;
+		double a, b, c;
 		
-		int z;
-		String s1, s2, s3;
+		a = Math.sqrt(x);
+		b = Math.sqrt(y);
+		c = Math.sqrt(25.0);
 		
-		 z = input.nextInt();
+		System.out.println("\n");
 		
-			 input.nextLine();
-		s1 = input.nextLine();
-		s2 = input.nextLine();
-		s3 = input.nextLine();
+		System.out.println("Valor de [a]: "+ a);
+		System.out.println("Valor de [b]: "+ b);
+		System.out.println("Valor de [c]: "+ c+"\n");
+		System.out.println("Raiz quadrada de [a]: "+ a);
+		System.out.println("Raiz quadrada de [b]: "+ b);
+		System.out.println("Raiz quadrada de  25: "+ c);
 		
-		System.out.println("DADOS DIGITADOS: \n");
+		a = Math.pow(x, y);
+		b = Math.pow(x, 2.0);
+		c = Math.pow(5.0, 2.0);
 		
-		System.out.println(z);
-		System.out.println(s1);
-		System.out.println(s2);
-		System.out.println(s3);
+		System.out.println("\n");
+		
+		System.out.println(x +" elevado à "+ y +" = "+ a);
+		System.out.println(x +" elevado ao quadrado = "+ b);
+		System.out.println("5.0 elevado ao quadrado = "+ c);
+		
 
-		input.close();
+		System.out.println("\n");
 		
-		//	### Observação! ###
-		//
-		// 							problema!
-		//
-		// Quando você usa um comando de leitura diferente do nextLine()
- 		// e dá alguma quebra de linha, essa quebra de linha fica "pendente" na entrada padrão.
-		// 
-		// Se você então fizer um nextLine(),
-		// aquela quebra de linha pendente será absorvida pelo nextLine().
-		// 
-		//							Solução!
-		//
-		// Faça um nextLine() extra antes de fazer o nextLine() de seu interesse. 
-		//
-
+		a = Math.abs(y);
+		b = Math.abs(z);
+		
+		System.out.println("Valor absoluto de "+ y +" = "+ a);
+		System.out.println("Valor absoluto de "+ z +" = "+ b);
 	}
 
 }
