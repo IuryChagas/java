@@ -1,4 +1,4 @@
-// Exercício 01
+// Exercício 01 //  Revisão de código
 // Fazer um script para ler as medidas da largura e comprimento de um terro rerangular com uma casa decimal, bem como  o valor do metro quadrado do terreno com duas casas decimais.
 // Em seguida, o script deve mostrar o valor da área do terreno, bem como o valor do preço, ambos com duas casas decimais: 
 // 
@@ -15,17 +15,13 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-
-		double largura;
-		double comprimento;
-		double valorMetroQuadrado;
-				
+	
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		largura = input.nextDouble();
-		comprimento = input.nextDouble();
-		valorMetroQuadrado = input.nextDouble();
+		double largura = input.nextDouble();
+		double comprimento = input.nextDouble();
+		double valorMetroQuadrado = input.nextDouble();
 				
 		double area = comprimento * largura;
 		double valorTotal = area * valorMetroQuadrado;
