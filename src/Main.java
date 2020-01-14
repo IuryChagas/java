@@ -5,12 +5,20 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);;
 		Scanner input = new Scanner(System.in);
 		
-		char value;
+		String valueS;
+		int valueInt;
+		double  valueDoub;
 		
-		value = input.next().charAt(0);
-		System.out.println("Valor digitador: "+ value);
+		valueS = input.next();
+		valueInt = input.nextInt();
+		valueDoub = input.nextDouble();
+		System.out.println("\nDados digitador:  \n");
+		System.out.println("Palavra: "+ valueS);
+		System.out.println("N° inteiro: "+ valueInt);
+		System.out.println("N° Double: "+ valueDoub);
 		
 		input.close();
 	}
