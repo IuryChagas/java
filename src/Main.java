@@ -1,48 +1,43 @@
-import com.sun.tools.sjavac.server.SysInfo;
+// Exercício 01
+// Fazer um script para ler as medidas da largura e comprimento de um terro rerangular com uma casa decimal, bem como  o valor do metro quadrado do terreno com duas casas decimais.
+// Em seguida, o script deve mostrar o valor da área do terreno, bem como o valor do preço, ambos com duas casas decimais: 
+// 
+// Exemplo de entrada:			|		Exemplo de Saída:
+//								|
+// Largura: 10.0				|	AREA: 300.00
+// Comprimento: 30.0			|	PREÇO: 60000.00
+// Valor Metro: 200.00			|	
+
+
+import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		double x = 3.0;
-		double y = 4.0;
-		double z = -5.0;
-		double a, b, c;
+		double largura;
+		double comprimento;
+		double valorMetroQuadrado;
+				
+		@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
 		
-		a = Math.sqrt(x);
-		b = Math.sqrt(y);
-		c = Math.sqrt(25.0);
+		largura = input.nextDouble();
+		comprimento = input.nextDouble();
+		valorMetroQuadrado = input.nextDouble();
+				
+		double area = comprimento * largura;
+		double valorTotal = area * valorMetroQuadrado;
 		
+		Locale.setDefault(Locale.US);
 		System.out.println("\n");
 		
-		System.out.println("Valor de [a]: "+ a);
-		System.out.println("Valor de [b]: "+ b);
-		System.out.println("Valor de [c]: "+ c+"\n");
-		System.out.println("Raiz quadrada de [a]: "+ a);
-		System.out.println("Raiz quadrada de [b]: "+ b);
-		System.out.println("Raiz quadrada de  25: "+ c);
-		
-		a = Math.pow(x, y);
-		b = Math.pow(x, 2.0);
-		c = Math.pow(5.0, 2.0);
-		
-		System.out.println("\n");
-		
-		System.out.println(x +" elevado à "+ y +" = "+ a);
-		System.out.println(x +" elevado ao quadrado = "+ b);
-		System.out.println("5.0 elevado ao quadrado = "+ c);
-		
-
-		System.out.println("\n");
-		
-		a = Math.abs(y);
-		b = Math.abs(z);
-		
-		System.out.println("Valor absoluto de "+ y +" = "+ a);
-		System.out.println("Valor absoluto de "+ z +" = "+ b);
-		
-		//  Para mais informações sobre funções matematicas em Java: java.lang.math
-		//  link: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+		System.out.printf("Largura: %.1f%n", largura);
+		System.out.printf("Comprimento: %.1f%n", comprimento);
+		System.out.printf("Valor por metro: %.2f%n%n", valorMetroQuadrado);
+		System.out.printf("AREA: %.2fm%n", area);
+		System.out.printf("PREÇO: R$ %.2f", valorTotal);
 	}
 
 }
