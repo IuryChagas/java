@@ -8,7 +8,7 @@
  - [x] 1003 *Soma Simples*
  - [x] 1004 *Produto Simples*
  - [x] 1005 *Média 1*
- - [ ] 1006 *Média 2*
+ - [x] 1006 *Média 2*
  - [x] 1007 *Diferença*
  - [x] 1008 *Salário*
  - [x] 1010 *Sálário com Bônus*
