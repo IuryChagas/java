@@ -20,6 +20,7 @@
  - [ ] 1015 *Distância Entre Dois Pontos*
  - [x] 1016 *Distância*
  - [x] 1017 *Fasto de Combustível*
+ - [x] 1019 *Conversão de Tempo*
 
 
 - [URI Online Judge - iniciante](https://www.urionlinejudge.com.br/judge/pt/problems/index/1 "Site para prática de exercícios")
