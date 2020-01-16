@@ -14,7 +14,7 @@
  - [x] 1010 *Sálário com Bônus*
  - [x] 1014 *Consumo*
  - [x] 1016 *Distância*
- - [ ] 1017 *Fasto de Combustível*
+ - [x] 1017 *Fasto de Combustível*
 
 
 - [URI Online Judge - iniciante](https://www.urionlinejudge.com.br/judge/pt/problems/index/1 "Site para prática de exercícios")
