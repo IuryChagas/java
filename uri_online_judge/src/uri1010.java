@@ -6,23 +6,21 @@ public class uri1010 {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
+	
+		int codPs1 = input.nextInt();
+		int qtdPs1 = input.nextInt();
+		Double valueUnitPs1 = input.nextDouble();
 		
-		int codPs1, numberPs1;
-		int codPs2, numberPs2;
+		int codPs2 = input.nextInt();
+		int qtdPs2 = input.nextInt();
+		Double valueUnitPs2 = input.nextDouble();
 		
-		double valueUnitPs1;
-		double valueUnitPs2;
+		double totPs1 = qtdPs1 * valueUnitPs1;
+		double totPs2 = qtdPs2 * valueUnitPs2;
 		
-		codPs1 = input.nextInt();
-		numberPs1 = input.nextInt();
-		valueUnitPs1 = input.nextDouble();
+		double total = totPs1 + totPs2;
 		
-		codPs2 = input.nextInt();
-		numberPs2 = input.nextInt();
-		valueUnitPs2 = input.nextDouble();
-		
-		System.out.printf("%nCod: %d%n Number: %d%n ValUnit: %.2f%n ", codPs1, numberPs1, valueUnitPs1);
-		System.out.printf("%nCod: %d%n Number: %d%n ValUnit: %.2f%n ", codPs2, numberPs2, valueUnitPs2);
+		System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
 		
 		input.close();
 	}
