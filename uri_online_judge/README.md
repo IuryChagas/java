@@ -11,8 +11,13 @@
  - [x] 1006 *Média 2*
  - [x] 1007 *Diferença*
  - [x] 1008 *Salário*
- - [x] 1010 *Sálário com Bônus*
+ - [ ] 1009 *Salário com Bônus*
+ - [x] 1010 *Cálculo simples*
+ - [ ] 1011 *Esfera*
+ - [ ] 1012 *Área*
+ - [ ] 1013 *O Maior*
  - [x] 1014 *Consumo*
+ - [ ] 1015 *Distância Entre Dois Pontos*
  - [x] 1016 *Distância*
  - [x] 1017 *Fasto de Combustível*
 
