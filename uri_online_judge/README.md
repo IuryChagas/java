@@ -13,7 +13,7 @@
  - [x] 1008 *Salário*
  - [x] 1010 *Sálário com Bônus*
  - [x] 1014 *Consumo*
- - [ ] 1016 *Distância*
+ - [x] 1016 *Distância*
  - [ ] 1017 *Fasto de Combustível*
 
 
