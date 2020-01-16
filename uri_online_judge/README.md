@@ -3,19 +3,18 @@
 
 <p align="center">Exercícios propostos do URI:</p>
 
-
- - [x] 1001
- - [x] 1002
- - [x] 1003
- - [x] 1004
- - [ ] 1005
- - [ ] 1006
- - [x] 1007
- - [x] 1008
- - [ ] 1010
- - [ ] 1014
- - [ ] 1016
- - [ ] 1017
+ - [x] 1001 *Extremamente Básico*
+ - [x] 1002 *Área do Círculo*
+ - [x] 1003 *Soma Simples*
+ - [x] 1004 *Produto Simples*
+ - [ ] 1005 *Média 1*
+ - [ ] 1006 *Média 2*
+ - [x] 1007 *Diferença*
+ - [x] 1008 *Salário*
+ - [ ] 1010 *Sálário com Bônus*
+ - [ ] 1014 *Consumo*
+ - [ ] 1016 *Distância*
+ - [ ] 1017 *Fasto de Combustível*
 
 
 - [URI Online Judge - iniciante](https://www.urionlinejudge.com.br/judge/pt/problems/index/1 "Site para prática de exercícios")
