@@ -11,7 +11,7 @@
  - [ ] 1006 *Média 2*
  - [x] 1007 *Diferença*
  - [x] 1008 *Salário*
- - [ ] 1010 *Sálário com Bônus*
+ - [x] 1010 *Sálário com Bônus*
  - [ ] 1014 *Consumo*
  - [ ] 1016 *Distância*
  - [ ] 1017 *Fasto de Combustível*
