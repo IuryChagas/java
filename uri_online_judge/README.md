@@ -7,7 +7,7 @@
  - [x] 1002 *Área do Círculo*
  - [x] 1003 *Soma Simples*
  - [x] 1004 *Produto Simples*
- - [ ] 1005 *Média 1*
+ - [x] 1005 *Média 1*
  - [ ] 1006 *Média 2*
  - [x] 1007 *Diferença*
  - [x] 1008 *Salário*
