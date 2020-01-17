@@ -1,18 +1,28 @@
+// leia duas notas do aluno, mostre a nota final com observação se reprovado caso nota seja inferior à 60.0! 
+
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
-			int hours;
+			double nota1, nota2, notaFinal;
 			
-			System.out.println("Quantas horas?\n ");
-			hours = input.nextInt();
+			System.out.println("1° Nota do Aluno: \n");
+			nota1 = input.nextDouble();
 			
-			if(hours < 12) System.out.println("Bom dia!");
-			else if (hours >= 12 && hours <= 18) System.out.println("Boa tarde!");
-			else System.out.println("Boa noite!");
+			System.out.println("2° Nota do Aluno: \n");
+			nota2 = input.nextDouble();
 			
+			notaFinal = (nota1 + nota2);
+			
+			if (notaFinal > 60.0) {
+				System.out.printf("NOTA FINAL = %.1f%n", notaFinal);
+			} else {
+				System.out.printf("NOTA FINAL = %.1f%nREPROVADO", notaFinal);
+			}
 		input.close();
 	}
 
