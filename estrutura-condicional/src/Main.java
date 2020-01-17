@@ -13,17 +13,34 @@ public class Main {
 		int nDia = input.nextInt();
 		String dia;
 		
-			 if(nDia == 1) dia = "Domingo";
-		else if(nDia == 2) dia = "Segunda";
-		else if(nDia == 3) dia = "Terça";
-		else if(nDia == 4) dia = "Quarta";
-		else if(nDia == 5) dia = "Quinta";
-		else if(nDia == 6) dia = "Sexta";
-		else if(nDia == 7) dia = "Sabado";
-		else 			   dia = "Valor inválido";
-
+		switch (nDia) {
+			case 1:
+				dia = "Domingo";
+				break;
+			case 2:
+				dia = "Segunda";
+				break;
+			case 3:
+				dia = "Terça";
+				break;
+			case 4:
+				dia = "Quarta";
+				break;
+			case 5:
+				dia = "Quinta";
+				break;
+			case 6:
+				dia = "Sexta";
+				break;
+			case 7:
+				dia = "Sabado";
+				break;
+			default:
+				dia = "Valor invalido!";
+				break;
+		}
+		
 		System.out.println("Dia da semana: "+ dia);
-
 		input.close();
 	}
 
