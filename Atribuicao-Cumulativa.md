@@ -1,4 +1,4 @@
-<h1 align-text="center">Operadores <br>de <br>atribuição acumulativa</h1>
+<h1 align="center">Operadores <br>de <br>atribuição acumulativa</h1>
 
 |	EXPRESSÃO CUMULATIVA	| 	EXPRESSÃO COMUM 	|
 |		---		|		---	  	|
