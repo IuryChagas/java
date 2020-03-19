@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cadastro de títulos</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">
+            <img src="/images/logo-gft.png" style="width: 32px; height: 32px;" alt="GFT internship academy">
+             GFT | Crud &copy;
+        </a>
+    </nav>
+
+    <div class="container-fluid">
+        <form>
+            <div class="container">
+                <div class="form-group">
+                    <header class="">
+                        <h2>Novo título</h2>
+                    </header>
+                    <div class="form-group row">
+                        <label for="description" class="col-sm-1 control-label">Description</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="description" placeholder="description"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="dueDate" class="col-sm-1 control-label">Due date</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="dueDate" placeholder="due date"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="value" class="col-sm-1 control-label">Value</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="value" placeholder="value"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="status" class="col-sm-1 control-label">Status</label>
+                    <div class="col-sm-2">
+                    <select class="form-control" id="status">
+                        <option>Pending</option>
+                        <option>Paid out</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="offset-md-1">
+                    <button type="submit" class="col-sm-1 btn btn-primary">Save</button>
+                </div>
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="/js/bootstrap.min.js"> </script>
+</body>
+</html>
