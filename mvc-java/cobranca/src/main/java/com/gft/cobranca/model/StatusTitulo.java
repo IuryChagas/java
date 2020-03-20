@@ -2,7 +2,8 @@ package com.gft.cobranca.model;
 
 public enum StatusTitulo {
 	PENDING("Pending"),
-	PAIDOUT("Paid out");
+	PAIDOUT("Paid out"),
+	CANCELED("cancelled");
 
 	private String descricao;
 	
