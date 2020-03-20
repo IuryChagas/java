@@ -7,6 +7,12 @@ form .container{
 form .container header {
 	margin: 1em 0;
 }
-form .alert {
+form .alert, table, .card {
 	margin-top: 1rem;
+}
+.container header {
+	margin-top: 1rem;
+}
+.card {
+	background-color: #f5f5f5;
 }

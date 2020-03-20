@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pesquisa de títulos</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">
+            <img src="/images/logo-gft.png" style="width: 32px; height: 32px;" alt="GFT internship academy">
+             GFT | Crud &copy;
+        </a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="container card">
+            <header class="text-center">
+                <h3>Pesquisa de títulos</h3>
+            </header>
+            <table class="table table-bordered table-striped">
+                <thead style="background-color: #fff;">
+                    <tr class="text-center">
+                        <th scope="col" class="text-center">#</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Data de vencimento</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td colspan="12" class="table-warning">Nenhum título foi encontrado!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/js/bootstrap.min.js"> </script>
+</body>
+</html>
