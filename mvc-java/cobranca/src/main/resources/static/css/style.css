@@ -7,3 +7,6 @@ form .container{
 form .container header {
 	margin: 1em 0;
 }
+form .alert {
+	margin-top: 1rem;
+}
