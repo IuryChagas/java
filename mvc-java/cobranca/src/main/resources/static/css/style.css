@@ -25,3 +25,6 @@ form .alert, table, .card {
 .title-custom {
 	float: left;
 }
+table {
+	background-color: #fbfbfb;
+}
