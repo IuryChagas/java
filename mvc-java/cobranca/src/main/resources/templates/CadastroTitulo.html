@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="LayoutPadrao">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Cadastro de títulos</title>
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">
-            <img src="/images/logo-gft.png" style="width: 32px; height: 32px;" alt="GFT internship academy">
-             GFT | Crud &copy;
-        </a>
-    </nav>
-
-    <div class="container-fluid">
+    <section layout:fragment="conteudo">
         <form method="POST" action="/titulos">
             <div align="center" class="alert alert-success alert-dismissible fade show" role="alert" th:if="${!#strings.isEmpty(mensagem)}">
                 <span th:text="${mensagem}">Dados cadastrados com sucesso!</span>
@@ -27,8 +16,11 @@
               </div>
             <div class="container">
                 <div class="form-group">
-                    <header class="">
-                        <h2>Novo título</h2>
+                    <header>
+                        <div class="clearfix">
+                        	<h2 class="title-custom">Novo título</h2>
+                        	<a class="btn btn-link a-custom" href="/titulos">Pesquisar títulos</a>
+                        </div>
                     </header>
                     <div class="form-group row">
                         <label for="description" class="col-sm-1 control-label">Description</label>
@@ -62,7 +54,5 @@
             </div>
             </div>
         </form>
-    </div>
-    <script src="/js/bootstrap.min.js"> </script>
-</body>
+    </section>
 </html>
