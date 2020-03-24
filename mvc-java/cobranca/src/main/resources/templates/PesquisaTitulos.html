@@ -34,7 +34,11 @@
                 			 th:classappend="${titulo.Pending ? 'badge-warning' : 'badge-success'}">
                 			</span>
                 		</td>
-                		<td  class="text-center"></td>
+                		<td  class="text-center">
+                			<a class="btn btn-link btn-xs" th:href="@{/titulos/{codigo}(codigo=${titulo.codigo})}">
+                				<span class="oi oi-pencil"></span>
+                			</a>
+                		</td>
                 	</tr>
                     <tr class="text-center">
                         <td colspan="12" class="table-warning" th:if="${#lists.isEmpty(titulos)}">Nenhum título foi encontrado!</td>

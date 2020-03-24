@@ -19,6 +19,8 @@
                         	<a class="btn btn-link a-custom" href="/titulos">Listar todos títulos</a>
                         </div>
                     </header>
+                    <input type="hidden" th:field="*{codigo}" />
+
                     <div class="form-group row" th:classappend="${#fields.hasErrors('descricao')} ? .invalid">
                         <label for="description" class="col-sm-1 control-label">Descrição</label>
                         <div class="col-sm-4">
