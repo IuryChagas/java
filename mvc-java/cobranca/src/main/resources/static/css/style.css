@@ -28,3 +28,7 @@ form .alert, table, .card {
 table {
 	background-color: #fbfbfb;
 }
+.invalid {
+  background-color: #f1eded;
+  border-color: #dc3545;
+}

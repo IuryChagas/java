@@ -7,35 +7,32 @@
     <title>Cadastro de títulos</title>
 </head>
     <section layout:fragment="conteudo">
-        <form method="POST" action="/titulos">
-            <div align="center" class="alert alert-success alert-dismissible fade show" role="alert" th:if="${!#strings.isEmpty(mensagem)}">
-                <span th:text="${mensagem}">Dados cadastrados com sucesso!</span>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-            <div class="container">
-                <div class="form-group">
+        <form method="POST" action="/titulos" th:object="${titulo}">
+            
+            <div  layout:insert="Mensagens"></div>
+
+			 <div class="container">
+                <div class="form-group" th:classappend="${#fields.hasErrors('valor')} ? .invalid">
                     <header>
                         <div class="clearfix">
                         	<h2 class="title-custom">Novo título</h2>
                         	<a class="btn btn-link a-custom" href="/titulos">Listar todos títulos</a>
                         </div>
                     </header>
-                    <div class="form-group row">
-                        <label for="description" class="col-sm-1 control-label">Description</label>
+                    <div class="form-group row" th:classappend="${#fields.hasErrors('descricao')} ? .invalid">
+                        <label for="description" class="col-sm-1 control-label">Descrição</label>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" id="description" name="descricao" placeholder="description"/>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="dueDate" class="col-sm-1 control-label">Due date</label>
+                    <div class="form-group row" th:classappend="${#fields.hasErrors('dataVencimento')} ? .invalid">
+                        <label for="dueDate" class="col-sm-1 control-label">Data de vencimento</label>
                         <div class="col-sm-2">
                             <input type="text" class="form-control" id="dueDate" name="dataVencimento" placeholder="due date"/>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="value" class="col-sm-1 control-label">Value</label>
+                    <div class="form-group row" th:classappend="${#fields.hasErrors('valor')} ? .invalid">
+                        <label for="value" class="col-sm-1 control-label">Valor</label>
                         <div class="col-sm-2">
                             <input type="text" class="form-control" id="value" name="valor" placeholder="value"/>
                         </div>
