@@ -30,7 +30,6 @@ public class Titulo {
 	@Size(max = 60, message = "Descrição não pode ter mais de 60 caracteres.")
 	private String descricao;
 
-	@NotNull(message = "Formato de data pode estar inválido!")
 	@NotNull(message = "Data de vencimento é obrigatório!")
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	@Temporal(TemporalType.DATE)
