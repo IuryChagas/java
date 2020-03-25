@@ -42,7 +42,7 @@
                     <div class="form-group row" th:classappend="${#fields.hasErrors('valor')} ? .invalid">
                         <label for="value" class="col-sm-1 control-label">Valor</label>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control" id="value" th:field="*{valor}" placeholder="Valor"/>
+                            <input type="text" class="form-control js-currency" id="value" th:field="*{valor}" placeholder="Valor"/>
                         </div>
                     </div>
                     <div class="form-group row">
