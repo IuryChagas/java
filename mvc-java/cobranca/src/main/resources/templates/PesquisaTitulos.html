@@ -35,10 +35,15 @@
 	                			 th:classappend="${titulo.Pending ? 'badge-warning' : 'badge-success'}">
 	                			</span>
 	                		</td>
-	                		<td  class="text-center">
-	                			<a class="btn btn-link btn-xs" th:href="@{/titulos/{codigo}(codigo=${titulo.codigo})}">
-	                				<span class="oi oi-pencil"></span>
-	                			</a>
+	                		<td  class="text-center" style="width: 10%; padding: 4px;">
+	                			<div style="display: flex; justify-content: space-around; align-items: center">
+	                				<a class="btn btn-link" th:href="@{/titulos/{codigo}(codigo=${titulo.codigo})}">
+	                					<span class="oi oi-pencil btn btn-primary input-edit" title="Editar título"></span>
+		                			</a>
+		                			<form th:action="@{/titulos/{codigo}(codigo=${titulo.codigo})}" method="POST">
+									 	<input type="submit" class="btn btn-danger input-custom" value="X" title="Excluir titulo?"/>
+									</form>
+	                			</div>
 	                		</td>
 	                	</tr>
 	                    <tr class="text-center">

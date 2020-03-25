@@ -9,6 +9,7 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -59,6 +60,13 @@ public class TituloController {
     	ModelAndView mv = new ModelAndView(CADASTRO_VIEW);
     	mv.addObject(titulo);
     	return mv;
+    }
+    
+    @PostMapping(value = "{codigo}")
+    public String excluir(@PathVariable Long codigo) {
+    	titulos.deleteById(codigo);
+    	
+    	return "redirect:/titulos";
     }
     
     @ModelAttribute("todosStatusTitulo")

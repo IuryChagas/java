@@ -32,3 +32,19 @@ table {
   background-color: #f1eded;
   border-color: #dc3545;
 }
+.modal-header {
+	justify-content: center;
+}
+.input-custom {
+	/* width: 25%; */
+    padding: .1rem .5rem;
+    font-weight: bold;
+
+}
+.input-edit {
+	line-height: 0;
+	padding: 6px;
+}
+tr .btn-link {
+	padding: 6px;
+}

@@ -24,19 +24,19 @@
                     <div class="form-group row" th:classappend="${#fields.hasErrors('descricao')} ? .invalid">
                         <label for="description" class="col-sm-1 control-label">Descrição</label>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="description" th:field="*{descricao}" placeholder="descrição"/>
+                            <input type="text" class="form-control" id="description" th:field="*{descricao}" placeholder="Descrição"/>
                         </div>
                     </div>
                     <div class="form-group row" th:classappend="${#fields.hasErrors('dataVencimento')} ? .invalid">
                         <label for="dueDate" class="col-sm-1 control-label">Data de vencimento</label>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control" id="dueDate" th:field="*{dataVencimento}" placeholder="due date"/>
+                            <input type="text" class="form-control" id="dueDate" th:field="*{dataVencimento}" placeholder="Vencimento"/>
                         </div>
                     </div>
                     <div class="form-group row" th:classappend="${#fields.hasErrors('valor')} ? .invalid">
                         <label for="value" class="col-sm-1 control-label">Valor</label>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control" id="value" th:field="*{valor}" placeholder="value"/>
+                            <input type="text" class="form-control" id="value" th:field="*{valor}" placeholder="Valor"/>
                         </div>
                     </div>
                     <div class="form-group row">
