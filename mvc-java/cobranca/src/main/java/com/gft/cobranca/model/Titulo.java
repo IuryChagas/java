@@ -30,12 +30,13 @@ public class Titulo {
 	@Size(max = 60, message = "Descrição não pode ter mais de 60 caracteres.")
 	private String descricao;
 
+	@NotNull(message = "Formato de data pode estar inválido!")
 	@NotNull(message = "Data de vencimento é obrigatório!")
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	@Temporal(TemporalType.DATE)
 	private Date dataVencimento;
 	
-	@NotNull(message = "Descrição é obrigatório!")
+	@NotNull(message = "Valor é obrigatório!")
 	@DecimalMin(value = "0.01", message = "Valor não pode ser menor que 0,01")
 	@DecimalMax(value = "9999.99", message = "Valor não pode ser maior que R$999.999,99")
 	@NumberFormat(pattern = "#,##0.00")
