@@ -16,12 +16,12 @@
 	            <table class="table table-bordered table-striped">
 	                <thead>
 	                    <tr class="text-center">
-	                        <th scope="col" class="text-center">#</th>
+	                        <th scope="col" class="text-center" title="n° identificador">#</th>
 	                        <th scope="col">Descrição</th>
 	                        <th scope="col">Data de vencimento</th>
 	                        <th scope="col">Valor</th>
 	                        <th scope="col">Status</th>
-	                        <th scope="col"></th>
+	                        <th scope="col">Ações</th>
 	                    </tr>
 	                </thead>
 	                <tbody>
@@ -38,11 +38,14 @@
 	                		<td  class="text-center" style="width: 10%; padding: 4px;">
 	                			<div style="display: flex; justify-content: space-around; align-items: center">
 	                				<a class="btn btn-link" th:href="@{/titulos/{codigo}(codigo=${titulo.codigo})}">
-	                					<span class="oi oi-pencil btn btn-primary input-edit" title="Editar título"></span>
+	                					<span class="oi oi-pencil btn btn-dark input-edit" title="Editar título"></span>
 		                			</a>
 		                			<form th:action="@{/titulos/{codigo}(codigo=${titulo.codigo})}" method="POST">
-									 	<input type="submit" class="btn btn-danger input-custom" value="X" title="Excluir titulo?"/>
+									 	<input type="submit" class="btn btn-danger input-custom" value="X" title="Excluir título?"/>
 									</form>
+									<a class="btn btn-link" href="#">
+										<span class="oi oi-task btn btn-success input-edit" title="Receber título?"></span>
+									</a>
 	                			</div>
 	                		</td>
 	                	</tr>
