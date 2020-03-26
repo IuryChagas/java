@@ -48,3 +48,8 @@ table {
 tr .btn-link {
 	padding: 6px;
 }
+.input-label {
+	padding-right: 0px;
+}
+
+

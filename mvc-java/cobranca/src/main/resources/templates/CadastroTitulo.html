@@ -28,23 +28,21 @@
                         </div>
                     </div>
                     <div class="form-group row" th:classappend="${#fields.hasErrors('dataVencimento')} ? .invalid">
-                        <label for="dueDate" class="col-sm-1 control-label">Data de vencimento</label>
-                        <div class="col-sm-2 input-group date">
-                            <input type="Date" class="form-control" id="dueDate" name="dataVencimento" th:field="*{dataVencimento}"
-								
-                            />
+                        <label for="dueDate" class="col-sm-1 control-label" th:field="*{dataVencimento}">Data de vencimento</label>
+                        <div class="col-sm-2 input-group date input-label">
+                            <input type="Date" class="form-control" id="dueDate" name="dataVencimento" th:field="*{dataVencimento}"/>
                         </div>
                     </div>
                     <div class="form-group row" th:classappend="${#fields.hasErrors('valor')} ? .invalid">
                         <label for="value" class="col-sm-1 control-label">Valor</label>
-                        <div class="col-sm-2">
+                        <div class="col-sm-2 input-label">
                             <input type="text" class="form-control js-currency" id="value" th:field="*{valor}" placeholder="Valor"/>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="status" class="col-sm-1 control-label">Status</label>
-                    <div class="col-sm-2">
-                    <select class="form-control" id="status" th:field="*{status}">
+                    <div class="col-sm-2 input-label">
+                    <select class="form-control" id="status" name="status" th:field="*{status}">
                         <option th:each="status : ${todosStatusTitulo}" th:value="${status}" th:text="${status.descricao}"></option>
                     </select>
                     </div>
