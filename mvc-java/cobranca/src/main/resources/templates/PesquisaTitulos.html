@@ -30,7 +30,7 @@
 	                		<td th:text="${titulo.descricao}"></td>
 	                		<td th:text="${#dates.format(titulo.dataVencimento, 'dd/MM/yyyy')}"></td>
 	                		<td class="text-center" th:text="|R$ ${{titulo.valor}}|"></td>
-	                		<td class="text-center">
+	                		<td class="text-center" th:attr="data-role=${titulo.codigo}">
 	                			<span class="badge" th:text="${titulo.status.descricao}"
 	                			 th:classappend="${titulo.Pending ? 'badge-warning' : 'badge-success'}">
 	                			</span>
@@ -40,12 +40,13 @@
 	                				<a class="btn btn-link" th:href="@{/titulos/{codigo}(codigo=${titulo.codigo})}">
 	                					<span class="oi oi-pencil btn btn-dark input-edit" title="Editar título"></span>
 		                			</a>
-		                			<form th:action="@{/titulos/{codigo}(codigo=${titulo.codigo})}" method="POST">
+		                			<form th:action="@{/titulos/{codigo}receber(codigo=${titulo.codigo})}" method="POST">
 									 	<input type="submit" class="btn btn-danger input-custom" value="X" title="Excluir título?"/>
 									</form>
 									<a	class="btn btn-link js-atualizar-status"
 									 th:if="${titulo.Pending}"
-									 th:href="@{/titulos/{codigo}/receber(codigo=${titulo.codigo})}">
+									 th:href="@{/titulos/{codigo}/receber(codigo=${titulo.codigo})}"
+									 th:attr="data-codigo=${titulo.codigo}">
 										<span class="oi oi-task btn btn-success input-edit" title="Receber título?"></span>
 									</a>
 	                			</div>

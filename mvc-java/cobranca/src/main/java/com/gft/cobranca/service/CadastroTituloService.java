@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
+import com.gft.cobranca.model.StatusTitulo;
 import com.gft.cobranca.model.Titulo;
 import com.gft.cobranca.repository.Titulos;
 
@@ -23,6 +24,14 @@ public class CadastroTituloService {
 	public void excluir(Long codigo) {
 		titulos.deleteById(codigo);
 		
+	}
+
+	public String receber(Long codigo) {
+		Titulo titulo = titulos.findById(codigo).get();
+		titulo.setStatus(StatusTitulo.PAIDOUT);
+		titulos.save(titulo);
+
+		return StatusTitulo.PAIDOUT.getDescricao();
 	}
 	
 }
