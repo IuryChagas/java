@@ -43,7 +43,9 @@
 		                			<form th:action="@{/titulos/{codigo}(codigo=${titulo.codigo})}" method="POST">
 									 	<input type="submit" class="btn btn-danger input-custom" value="X" title="Excluir título?"/>
 									</form>
-									<a class="btn btn-link" href="#">
+									<a	class="btn btn-link js-atualizar-status"
+									 href="#" th:if="${titulo.Pending}"
+									 th:href="@{/titulos/{codigo}/receber(codigo=${titulo.codigo})}">
 										<span class="oi oi-task btn btn-success input-edit" title="Receber título?"></span>
 									</a>
 	                			</div>
