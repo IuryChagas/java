@@ -28,7 +28,7 @@
 	              		<tr th:each="titulo : ${titulos}">
 	                		<td class="text-center" th:text="${titulo.codigo}">1</td>
 	                		<td th:text="${titulo.descricao}"></td>
-	                		<td class="text-center" th:text="${{titulo.dataVencimento}}"></td>
+	                		<td th:text="${#dates.format(titulo.dataVencimento, 'dd/MM/yyyy')}"></td>
 	                		<td class="text-center" th:text="|R$ ${{titulo.valor}}|"></td>
 	                		<td class="text-center">
 	                			<span class="badge" th:text="${titulo.status.descricao}"
@@ -44,7 +44,7 @@
 									 	<input type="submit" class="btn btn-danger input-custom" value="X" title="Excluir título?"/>
 									</form>
 									<a	class="btn btn-link js-atualizar-status"
-									 href="#" th:if="${titulo.Pending}"
+									 th:if="${titulo.Pending}"
 									 th:href="@{/titulos/{codigo}/receber(codigo=${titulo.codigo})}">
 										<span class="oi oi-task btn btn-success input-edit" title="Receber título?"></span>
 									</a>

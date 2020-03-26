@@ -79,10 +79,7 @@ public class TituloController {
     	return "redirect:/titulos";
     }
 
-//    @RequestMapping
-//    public void receber(Long codigo) {
-//    	
-//    }
+
     @ModelAttribute("todosStatusTitulo")
     public List<StatusTitulo> todosStatusTitulo(){
     	return Arrays.asList(StatusTitulo.values());

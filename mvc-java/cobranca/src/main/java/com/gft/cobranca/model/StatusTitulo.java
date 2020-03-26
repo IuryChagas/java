@@ -2,7 +2,7 @@ package com.gft.cobranca.model;
 
 public enum StatusTitulo {
 	PENDING("Pendente"),
-	PAIDOUT("Pago");
+	PAIDOUT("Recebido");
 
 	private String descricao;
 	
