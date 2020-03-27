@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorator="LayoutPadrao">
+      layout:decorator="LayoutPSearch">
 <head>
     <title>Pesquisa de títulos</title>
 </head>
@@ -40,7 +40,7 @@
 	                				<a class="btn btn-link" th:href="@{/titulos/{codigo}(codigo=${titulo.codigo})}">
 	                					<span class="oi oi-pencil btn btn-dark input-edit" title="Editar título"></span>
 		                			</a>
-		                			<form th:action="@{/titulos/{codigo}receber(codigo=${titulo.codigo})}" method="POST">
+		                			<form th:action="@{/titulos/{codigo}(codigo=${titulo.codigo})}" method="POST">
 									 	<input type="submit" class="btn btn-danger input-custom" value="X" title="Excluir título?"/>
 									</form>
 									<a	class="btn btn-link js-atualizar-status"

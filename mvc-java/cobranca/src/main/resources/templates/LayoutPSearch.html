@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Cobrança</title>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+        <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    	
+    </head>
+    <body>
+        <header>
+	        <nav class="navbar navbar-dark bg-dark">
+	        <a href="#" class="navbar-brand">
+	            <img src="/images/logo-gft.png" style="width: 32px; height: 32px;" alt="GFT internship academy">
+	            GFT | Crud &copy;
+	        </a>
+	          <form class="form-inline" method="GET">
+			    <input class="form-control mr-sm-2" autofocus="autofocus" type="search" placeholder="Pesquisar por título" aria-label="Search">
+		    	<button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+		    		<span class="oi oi-magnifying-glass"></span>
+		    		Pesquisar
+		    	</button>
+			  </form>
+	    	</nav>
+        </header>
+
+        <section layout:fragment="conteudo">
+	        <div class="container-fluid">
+	        	<p>insert page content here...</p>
+	        </div>
+    	</section>
+        <script src="/js/bootstrap.min.js"> </script>
+       	<script src="/js/jquery.maskMoney.min.js"></script>
+       	<script>
+	   		$(function() {
+	   			$('.js-currency').maskMoney({decimal: ',', thousands: '.', allowZero: true});
+	   			$('.js-atualizar-status').on('click', function(event) {
+	   				event.preventDefault();
+	   				var botaoReceber = $(event.currentTarget);
+	   				var urlReceber = botaoReceber.attr('href');
+ 				
+	   				var response = $.ajax({
+	   					url: urlReceber,
+	   					type: 'PUT'
+	   				});
+	   				
+	   				response.done(function(e){
+	   					var codigoTitulo = botaoReceber.data('codigo');
+	   					$('[data-role='+ codigoTitulo +']').html('<span class="badge btn-success">'+ e +'</span>');
+	   					botaoReceber.hide();
+	   				});
+	   				
+	   				response.fail(function(e){
+	   					console.log(e);
+	   					alert('Erro ao receber o pagamento!');
+	   				});
+	   			});
+	   		});
+   		</script>
+    </body>
+</html>
