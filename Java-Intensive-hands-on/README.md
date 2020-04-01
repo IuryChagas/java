@@ -6,9 +6,9 @@
 
 <h4 align="center"><a href="https://www.udemy.com/share/1013hwA0ITdFtbQHQ=/" title="Instrutor: Nelio Alves">Java COMPLETO 2020 - Programação Orientada a Objetos</a></h4>
 
-- [ ] **Seção 1:** Introdução
-- [ ] **Seção 2:** Conceitos de programação
-- [ ] **Seção 3:** Introdução à linguagem Java
+- [x] **Seção 1:** Introdução
+- [x] **Seção 2:** Conceitos de programação
+- [x] **Seção 3:** Introdução à linguagem Java
 - [ ] **Seção 4:** Estrutura sequencial
 - [ ] **Seção 5:** Estrutura condicional
 - [ ] **Seção 6:** Estruturas repetitivas
