@@ -36,3 +36,8 @@
 - [x] Construir web services usando Spring Boot e boas práticas
 - [x] Acessar banco de dados relacionais com comandos SQL (JDBC) e também com ORM (JPA/Hibernate)
 - [x] Acessar banco de dados NoSQL
+
+
+##### JDK 11 Documentation ##### 
+- [Oracle Docs - Java Components page](https://docs.oracle.com/en/java/javase/11/ "Hel center ~ JDK 11 Documentation")
+- [Diretório do curso:](https://github.com/IuryChagas/java/tree/master/Java-Intensive-hands-on "master/Java-Intensive-hands-on")
