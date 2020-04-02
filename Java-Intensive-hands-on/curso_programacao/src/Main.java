@@ -3,19 +3,27 @@ import java.util.Locale;
 public class Main {
 
 	public static void main(String[] args) {
-		int y = 32;
-		double x = 10.321547;
-		double z = 14.132564;
+		String product1 = "Computer";
+		String product2 = "Office desk";
 		
-		System.out.printf("output do tipo formatado, imprimindo 2 casas decimais e adicionando uma nova linha: %.2f%n", x);
-		System.out.printf("output do tipo formatado, imprimindo 5 casas decimais e adicionando uma nova linha: %.5f\n", z);
-		System.out.println(x);
-		System.out.println(y);
-		System.out.println("etc!");
+		int age = 30;
+		int code = 5290;
+		char gender = 'F';
 		
-		System.out.println("\nPrinte com a formatação US:");
+		double price1 = 2100.0;
+		double price2 = 650.50;
+		double measure = 53.234567;
+
+		System.out.println("Products:");
+		System.out.printf("%s, whitch price is $%.2f\n", product1, price1);
+		System.out.printf("%s, whitch price is $%.2f", product2, price2);
+		System.out.println("\n");
+		System.out.printf("Record: %d years old, code %d and gender: %s%n", age, code, gender);
+		System.out.println("\n");
+		System.out.printf("Measure with eight decimal places: %.8f%n", measure);
+		System.out.printf("Rouded (Three decimal places):  %.3f\n", measure);
 		Locale.setDefault(Locale.US);
-		System.out.println(x);
+		System.out.printf("US decimal point:  %.3f\n", measure);
 	}
 
 }
