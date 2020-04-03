@@ -3,27 +3,81 @@ import java.util.Locale;
 public class Main {
 
 	public static void main(String[] args) {
-		String product1 = "Computer";
-		String product2 = "Office desk";
-		
-		int age = 30;
-		int code = 5290;
-		char gender = 'F';
-		
-		double price1 = 2100.0;
-		double price2 = 650.50;
-		double measure = 53.234567;
+		int x, y;
 
-		System.out.println("Products:");
-		System.out.printf("%s, whitch price is $%.2f\n", product1, price1);
-		System.out.printf("%s, whitch price is $%.2f", product2, price2);
-		System.out.println("\n");
-		System.out.printf("Record: %d years old, code %d and gender: %s%n", age, code, gender);
-		System.out.println("\n");
-		System.out.printf("Measure with eight decimal places: %.8f%n", measure);
-		System.out.printf("Rouded (Three decimal places):  %.3f\n", measure);
-		Locale.setDefault(Locale.US);
-		System.out.printf("US decimal point:  %.3f\n", measure);
+		x = 5;
+		y = 2 * x;
+
+		System.out.println("Exemplo: [1]\n");
+		System.out.println("	X: "+ x);
+		System.out.println("	Y: "+ y);
+
+		int a;
+		double b;
+
+		a = x;
+		b = 2 * a; // b é do tipo double, portanto o output será convertido para: 10.0
+
+		System.out.println("\nExemplo: [2]\n");
+		System.out.println("	A: "+ a);
+		System.out.println("	B: "+ b);
+
+		double c, d, e, area;
+
+		c = 6.0;
+		d = 8.0;
+		e = 5.0;
+
+		area = (c + d) / 2.0 * e;
+
+		System.out.println("\nExemplo: [3]\n");
+		System.out.println("	AREA: "+ area);
+
+		// 									Boa prática:
+		//
+		// Sempre indique o tipo do número, se a expressão for ponto flutuante (não inteira).
+		//
+		//  Para double use: .0
+		//	Para float use: f
+
+		float f, g, h, area2;
+
+		f = 9f;
+		g = 7f;
+		h = 5f;
+
+		area2 = (f + g) / 2f * h;
+
+		System.out.println("	AREA2: "+ area2);
+
+		System.out.println("\nExemplo: [4]\n");
+
+		int i, j;
+		double resultado;
+
+		i = 5;
+		j = 2;
+
+		resultado = i / j; // por i e j serem do tipo inteiro a compilação convertera o resultado para inteiro.
+
+		System.out.println("	RESULTADO: "+ resultado);
+
+		resultado = (double) i / j; // para que o resultado seja do tipo double, é necessário fazer o CASTIN ou seja, adicionar (double) na expressão.
+								   // resultado fica assim: resultado = (double) i / j; conversão explícita!
+
+		System.out.println("	RESULTADO: "+ resultado);
+
+		System.out.println("\nExemplo: [5]\n");
+
+		double k;
+		int l;
+
+		k = 5.0;
+		l = (int) k; // Não se importando com a perca de informação é possível converter um double para inteiro realizando  casting "conversão explícita".
+
+		System.out.println("	K: "+ k);
+
+
 	}
 
 }
