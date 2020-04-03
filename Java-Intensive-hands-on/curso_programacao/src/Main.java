@@ -1,53 +1,25 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-
-		Locale.setDefault(Locale.US); // para setar o tipo de sintax numérica! exe US: 4.5 exe BR: 4,5 
 		Scanner input = new Scanner(System.in);
 
-//		String n;   // lendo string
-//
-//		n = input.next(); // para string
-//		System.out.println("Você digitou: "+ n);
+		int x;
+		String s1, s2, s3;
 
-//		int x; // lendo inteiro
-//
-//		x = input.nextInt();
-//
-//		System.out.println("Você digitou: "+ x);
+		 x = input.nextInt();  // Quando você usa um comando de leitura diferente do nextLine() e dá alguma quebra de linha, essa quebra de linha fica "pendente" na entrada padrão.
+		 	input.nextLine(); // Se você então fizer um nextLine(), aquela quebra de linha pendente será absorvida pelo nextLine().
 
+		s1 = input.nextLine();
+		s2 = input.nextLine();
+		s3 = input.nextLine();
 
-//		double y; // lendo double
-//
-//		y = input.nextDouble();
-//		
-//		System.out.println("Você digitou: "+ y);
-
-//		char x;
-//		x = input.next().charAt(0); // capturar o primeiro caractere da string
-//		
-//		System.out.println("Você digitou: "+ x);
-//		
-
-		// lendo vários dados na mesma linha
-
-		String x;
-		int y;
-		double z;
-
-		x = input.next();
-		y = input.nextInt();
-		z = input.nextDouble();
-
-		System.out.println("	Dados Digitados:");
+		System.out.println("	DADOS DIGITADOS:");
 		System.out.println(x);
-		System.out.println(y);
-		System.out.println(z);
-
-		input.close();
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
 	}
 
 }
