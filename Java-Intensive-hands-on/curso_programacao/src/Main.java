@@ -12,25 +12,23 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
 
-		int cod1, cod2, n_peca1, n_peca2;
-		double v_unitario1, v_unitario2, valor_total1, valor_total2, valor_total_pecas;
+		double A, B, C, triangulo, circulo, trapezio, quadrado, retangulo;
 
-		cod1 = input.nextInt();
-		n_peca1 = input.nextInt();
-		v_unitario1 = input.nextDouble();
+		A = input.nextDouble();
+		B = input.nextDouble();
+		C = input.nextDouble();
 
-		valor_total1 = n_peca1 * v_unitario1;
+		triangulo = A * C / 2.0 ;
+		circulo = 3.14159 * C * C;
+		trapezio = (A + B) / 2.0 * C;
+		quadrado = B * B;
+		retangulo = A * B;
 
-		cod2 = input.nextInt();
-		n_peca2 = input.nextInt();
-		v_unitario2 = input.nextDouble();
-
-		valor_total2 = n_peca2 * v_unitario2;
-
-		valor_total_pecas = valor_total1 + valor_total2;
-
-
-		System.out.printf("VALOR A PAGAR = R$ %.2f\n", valor_total_pecas);
+		System.out.printf("%nTRIANGULO: %.3f\n", triangulo);
+		System.out.printf("CIRCULO: %.3f\n", circulo);
+		System.out.printf("TRAPEZIO: %.3f\n", trapezio);
+		System.out.printf("QUADRADO: %.3f\n", quadrado);
+		System.out.printf("RETANGULO: %.3f\n", retangulo);
 		input.close();
 	}
 
