@@ -4,22 +4,24 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-//		Fazer um programa para ler quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto
-//		de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
+//		Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por
+//		hora e calcula o salário desse funcionário. 
+
+//		A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
 
 		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
 
-		int A, B, C, D, DIFERENCA;
-		
-		A = input.nextInt();
-		B = input.nextInt();
-		C = input.nextInt();
-		D = input.nextInt();
+		int Numero, Horas_trabalho;
+		float Valor_hora, Salary;
 
-		DIFERENCA = (A * B) - (C * D);
+		Numero = input.nextInt();
+		Horas_trabalho = input.nextInt();
+		Valor_hora = input.nextFloat();
 
-		System.out.printf("DIFERENCA = %d", DIFERENCA);
+		Salary = Valor_hora * Horas_trabalho;
+
+		System.out.printf("NUMBER = %d%nSALARY = U$ %.2f%n", Numero, Salary);
 		input.close();
 	}
 
