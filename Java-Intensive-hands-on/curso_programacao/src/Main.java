@@ -4,23 +4,22 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-//		Faça um programa para ler o valor do raio de um círculo, e depois mostrar o valor da área deste círculo com quatro
-//		casas decimais conforme exemplos.
-//
-//		Fórmula da área: area = π . raio2
-//		Considere o valor de π = 3.14159
+//		Fazer um programa para ler quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto
+//		de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
 
 		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
 
-		double area, pi, raio;
+		int A, B, C, D, DIFERENCA;
 		
-		pi = 3.14159;
-		
-		raio = input.nextDouble();
-		area = pi * (raio * raio);
-		
-		System.out.printf("A = %.4f\n", area);
+		A = input.nextInt();
+		B = input.nextInt();
+		C = input.nextInt();
+		D = input.nextInt();
+
+		DIFERENCA = (A * B) - (C * D);
+
+		System.out.printf("DIFERENCA = %d", DIFERENCA);
 		input.close();
 	}
 
