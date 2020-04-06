@@ -14,6 +14,7 @@ public class Main {
 		
 		System.out.println("SOMA = "+ SOMA);
 
+		input.close();
 	}
 
 }
