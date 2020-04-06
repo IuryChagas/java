@@ -1,36 +1,18 @@
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		double x = 3.0;
-		double y = 4.0;
-		double z = -5.0;
-		double A, B, C;
+		Scanner input = new Scanner(System.in);
 
-		A = Math.sqrt(x); // Raiz quadrada
-		B = Math.sqrt(y);
-		C = Math.sqrt(25.0);
-		System.out.println("Raiz quadrada de " + x + A);
-		System.out.println("Raiz quadrada de " + y + B);
-		System.out.println("Raiz quadrada de 25 " + C);
+		int A, B, SOMA;
 
-
-		A = Math.pow(x, y); // Potenciação
-		B = Math.pow(x, 2.0);
-		C = Math.pow(5.0, 2.0);
-
-		System.out.println("\n");
-
-		System.out.println(x + " elevado a " + y + " = " + A);
-		System.out.println(x + " elevado a " + y + " = " + B);
-		System.out.println("5 elevado ao quadrado = " + C);
-
-		System.out.println("\n");
-
-		A = Math.abs(y); // Valor absoluto!
-		B = Math.abs(z);
-		System.out.println("Valor absoluto de " + y + " = " + A);
-		System.out.println("Valor absoluto de " + z + " = " + B);
+		A = input.nextInt();
+		B = input.nextInt();
+		
+		SOMA = A + B;
+		
+		System.out.println("SOMA = "+ SOMA);
 
 	}
 
